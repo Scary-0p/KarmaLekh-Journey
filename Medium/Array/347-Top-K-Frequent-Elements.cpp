@@ -1,18 +1,19 @@
-        for(auto num : nums){
-            mp[nums] += 1;
-        }
-        sort(nums.begin(), nums.end(), [&](int a, int b)){
-            if(mp[a] != mp[b]){
-        }
-                return(mp[a] > mp[b]);
-            }
-            return a < b;
+        sort(uniqueNums.begin(), uniqueNums.end(),
+             [&](int a, int b) {
+                 if (mp[a] != mp[b]) {
+                     return mp[a] > mp[b];
+                 }
+                 return a < b;
+             });
+
+        // Step 4: Take the first k elements
         vector<int> ans;
-                ans.push_back(nums[i])
-        for(int i=0; i<=k; i++){
-            if(nums[i+1] != nums[i]){
-            }
+        for (int i = 0; i < k; i++) {
+            ans.push_back(uniqueNums[i]);
         }
-    }
-        return ans;
-};
+
+        // Step 3: Sort by frequency
+
+        }
+            uniqueNums.push_back(entry.first);
+        for (auto& entry : mp) {
