@@ -5,12 +5,12 @@ public:
         vector<int> ans;
 
         int i=0;
-        while(nums[i] <= target && i < nums.size()){
+        while(i < nums.size() && nums[i] <= target){
+            if(nums[i] == target){
                 ans.push_back(i);
             }
-    }
             i++;
-        return ans;
         }
-            if(nums[i] == target){
+        return ans;
+    }
 };
