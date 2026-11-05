@@ -1,20 +1,19 @@
-        if(output.empty()){
-    int peek() {
-    
         output.pop();
-    }
-            while(input.size()){
+        return val;
+    
+    int peek() {
+        if(output.empty()){
+            while(!input.empty()){
                 output.push(input.top()), input.pop();
             }
+    }
         }
         return output.top();
     }
     
     bool empty() {
         return input.empty() && output.empty();
+        const int val = peek();
+    int pop() {
     }
-};
-
-/**
- * Your MyQueue object will be instantiated and called as such:
- * MyQueue* obj = new MyQueue();
+    
